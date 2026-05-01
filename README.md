@@ -2,9 +2,9 @@
 
 # image-mirror
 
-![workflow build](https://github.com/imdingtalk/image-mirror/actions/workflows/image-mirror.yml/badge.svg)
-[![Version](https://img.shields.io/github/v/release/imdingtalk/image-mirror)](https://github.com/imdingtalk/image-mirror/releases)
-[![License](https://img.shields.io/github/license/imdingtalk/image-mirror)](https://www.apache.org/licenses/LICENSE-2.0.html)
+![workflow build](https://github.com/dailyboo/image-mirror/actions/workflows/image-mirror.yml/badge.svg)
+[![Version](https://img.shields.io/github/v/release/dailyboo/image-mirror)](https://github.com/dailyboo/image-mirror/releases)
+[![License](https://img.shields.io/github/license/dailyboo/image-mirror)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 `image-mirror` 是一个帮助加速下载某些难以下载的镜像的工具，可以加速下载各国外大厂的某些无法下载的镜像
 
@@ -23,12 +23,12 @@
 
 1. fork 本仓库，然后在仓库设置中打开`issue`功能  
 2. 设置自己的目标仓库信息  
-![image](https://github.com/imdingtalk/image-mirror/assets/16778873/a83b8765-3bd1-4391-afb3-cd8d4bc4718d)
-![image](https://github.com/imdingtalk/image-mirror/assets/16778873/b4623fca-43c2-4f55-bfb1-cef2e949fb93)
-比如我们要同步一个外部镜像到`registry.cn-hangzhou.aliyuncs.com/imdingtalk/kube-apiserver:v1.27.12`
+![image](https://github.com/dailyboo/image-mirror/assets/16778873/a83b8765-3bd1-4391-afb3-cd8d4bc4718d)
+![image](https://github.com/dailyboo/image-mirror/assets/16778873/b4623fca-43c2-4f55-bfb1-cef2e949fb93)
+比如我们要同步一个外部镜像到`registry.cn-hangzhou.aliyuncs.com/dailyboo/kube-apiserver:v1.27.12`
 
 #### 需要设置一些变量 `variables`  
-- **TARGET_NAMESPACE:** 目标`NAMESPACE`,该例子中应该设置为`imdingtalk`  
+- **TARGET_NAMESPACE:** 目标`NAMESPACE`,该例子中应该设置为`dailyboo`  
 - **TARGET_REGISTRY:** 目标仓库，该例子中应该设置为`registry.cn-hangzhou.aliyuncs.com`  
 - **TARGET_REGISTRY_USER:** 目标仓库的用户名 
  
@@ -40,12 +40,12 @@
 
 ### 直接使用
 
-提交一个issue即可，issue内容为你无法正常下载的镜像，[示例](https://github.com/imdingtalk/image-mirror/issues/30)如下：  
-![image](https://github.com/imdingtalk/image-mirror/assets/16778873/b1778053-c251-4003-ad86-caa8637b6b76)
+提交一个issue即可，issue内容为你无法正常下载的镜像，[示例](https://github.com/dailyboo/image-mirror/issues/30)如下：  
+![image](https://github.com/dailyboo/image-mirror/assets/16778873/b1778053-c251-4003-ad86-caa8637b6b76)
 
-![image](https://github.com/imdingtalk/image-mirror/assets/16778873/18609b09-f41a-46e9-a240-d7eddd925b53)
+![image](https://github.com/dailyboo/image-mirror/assets/16778873/18609b09-f41a-46e9-a240-d7eddd925b53)
 
-就会触发GitHub action，同步镜像到 `registry.cn-hangzhou.aliyuncs.com`(默认同步到`imdingtalk`的`NAMESPACE`下)  
+就会触发GitHub action，同步镜像到 `registry.cn-hangzhou.aliyuncs.com`(默认同步到`dailyboo`的`NAMESPACE`下)  
 
 GitHub action bot会在action完成后，提示同步成功的镜像
 
